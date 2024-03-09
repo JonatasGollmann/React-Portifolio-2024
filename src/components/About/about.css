@@ -1,0 +1,59 @@
+.sobreContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    font-size: 1rem;
+}
+.apresentacao > *{
+    max-width: 600px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundContainerColor);
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    line-height: 1.25;
+}
+.resume i, .education i{
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.conhecimentos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+@media screen and (max-width:480px) {
+    .sobreContainer{
+        height: auto;
+    }
+    .sobreContent{
+        margin: 45px auto;
+    }
+    .apresentacao {
+        flex-direction: column;
+    }
+    .apresentacao > *{
+        width: 100%;
+    }
+    .resume{
+        margin-bottom: 30px;
+    }
+    .conhecimentos{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}

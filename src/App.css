@@ -1,0 +1,37 @@
+/* Informações podem ser usadas por variaveis por todo o projeto*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;900&display=swap');
+@import url('remixicon/fonts/remixicon.css');
+
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: var(--backgroundColor);
+  color: var(--mainColor);
+  
+  /*Cores*/
+  --backgroundColor: #d9d9d9;
+  --backgroundContainerColor: #f5f5f5;
+  --mainColor: #1e1e1e;
+  --tittleColor: #078C4E;
+  --backgroundCircle1:#45C4B0;
+  --backgroundCircle2: #FF4747;
+  --backgroundCircle3: var(--tittleColor);
+  --backgroundCircle4: #AFD91A;
+}
+.main{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+a {
+  font-weight: 500;
+  color: var(--mainColor);
+  text-decoration: none;
+}
+.tittle{
+  color: var(--tittleColor);
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: default;
+}
