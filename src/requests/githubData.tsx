@@ -7,7 +7,7 @@ export async function repositoriosGitHub() {
     //console.log(conectGitHubJson);
     const dados = await Promise.all(conectGitHubJson.map( 
         async (dadosRepos : object | any)=>{
-        const linguagens = await obtemLinguagens(dadosRepos.languages_url);
+        const linguagens = await obtemLinguagens({ url: dadosRepos.languages_url });
         if(linguagens.ok){
             const dadosFormatados = formataData(await linguagens.json(), dadosRepos);
             return dadosFormatados;
