@@ -29,6 +29,21 @@
     }
     
 }
+@media screen and (min-width:481px) and (max-width:1024px) and (hover : hover) {
+    .linguagens{
+        overflow-x: scroll;
+    }
+    .linguagens::-webkit-scrollbar{
+        background: transparent;
+        height: 5px;
+        border-radius: 100px;
+    }
+    .linguagens::-webkit-scrollbar-thumb{
+        background-color: var(--tittleColor);
+        
+        border-radius: 100px;
+    }
+}
 @media screen and (max-width:1024px){
     .linguagens{
         justify-content: start;
@@ -36,20 +51,5 @@
     }
     .linguagens::-webkit-scrollbar{
         height: 0;
-    }
-    @media (hover : hover){
-        .linguagens{
-            overflow-x: scroll;
-        }
-        .linguagens::-webkit-scrollbar{
-            background: transparent;
-            height: 5px;
-            border-radius: 100px;
-        }
-        .linguagens::-webkit-scrollbar-thumb{
-            background-color: var(--tittleColor);
-            
-            border-radius: 100px;
-        }
     }
 }
