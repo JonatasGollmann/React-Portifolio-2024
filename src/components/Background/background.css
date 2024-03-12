@@ -70,3 +70,27 @@
         opacity: 1;
     }
 }
+@media screen and (max-width:480px){
+    .circ1{
+        width: 100px;
+        height: 100px;
+        filter: blur(50px);
+    }
+    .circ2{
+        width: 250px;
+        height: 250px;
+        filter: blur(125px); 
+    }
+    .circ3{
+        width: 100px;
+        height: 100px;
+        filter: blur(50px);
+    }
+    .circ4{
+        width: 100px;
+        height: 100px;
+        filter: blur(50px);
+        top: 45%;
+        left: 35%;
+    }
+}
