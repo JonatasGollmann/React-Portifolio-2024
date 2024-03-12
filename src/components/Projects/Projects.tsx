@@ -1,7 +1,7 @@
 import GitHub from "./GitHubRepos/github";
-import "./Projects.css";
 import LogoBrickNix from "../../assets/brickNixLogo.png";
 import BackgroundBricknix from '../../assets/BrickNixImage.png'
+import "./Projects.css";
 
 export default function Projects() {
   return (

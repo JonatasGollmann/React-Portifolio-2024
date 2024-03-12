@@ -17,7 +17,7 @@
     bottom: 0;
     right:0;
     animation: circAnimation 15s 1.5s infinite alternate ease-in-out;
-    filter: blur(125px);
+    filter: blur(200px);
 }
 .circ2{
     width: 400px;
@@ -26,7 +26,7 @@
     top: -100px;
     background-color: var(--backgroundCircle1);
     transform: translate(-50% -50%);
-    filter: blur(200px);
+    filter: blur(300px);
     animation: circAnimation 15s infinite alternate-reverse ease-in-out;
 }
 .circ3{
@@ -45,35 +45,28 @@
     top: 40%;
     left: 40%;
     animation: circAnimation 5s 5s infinite alternate-reverse ease-in-out;
-    filter: blur(100px)
+    filter: blur(100px);
 }
 
 @keyframes circAnimation {
     0%{
-        translate: 5px 5px;
+        transform: translate(-15%, -15%);
     }
     25%{
-        
-        translate: 35px 5px;
+        transform: translate(30%, 25%), scale(1.5);
         opacity: 0.5;
-        scale: 1.5;
+
     }
     50%{
+        transform: translate(0, 0), scale(0.75)
         
-        scale: 0.75;
-        translate: 0;
     }
     75%{
-        
-        translate: -15px -25px;
+        transform: translate(45%, 20%), scale(1.25);
         opacity: 0.75;
-        
-        scale: 1.5;
     }
     100%{
-        
-        scale: 1.75;
-        translate: 20px 30px;
+        transform: translate(-15%, 10%), scale(1.75);
         opacity: 1;
     }
 }

@@ -35,3 +35,8 @@ a {
   text-transform: uppercase;
   cursor: default;
 }
+@media screen and (max-width:480px){
+  .main{
+    scroll-snap-type: none;
+  }
+}

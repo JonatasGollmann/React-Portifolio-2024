@@ -7,18 +7,15 @@
     background-color: var(--backgroundContainerColor);
     color: var(--mainColor);
     border-radius: 25px;
-    overflow: scroll;
+    
 }
-.linguagens::-webkit-scrollbar{
-    width: 0;
-    height: 0;
-}
+
 
 .iconMain{
     display: flex;
     align-items: center;
     margin: 0 10px;
-  
+    color: var(--mainColor);
 }
 .tittleIcon{
     margin-left: 10px;
@@ -35,5 +32,24 @@
 @media screen and (max-width:1024px){
     .linguagens{
         justify-content: start;
+        overflow-x: scroll;
+    }
+    .linguagens::-webkit-scrollbar{
+        height: 0;
+    }
+    @media (hover : hover){
+        .linguagens{
+            overflow-x: scroll;
+        }
+        .linguagens::-webkit-scrollbar{
+            background: transparent;
+            height: 5px;
+            border-radius: 100px;
+        }
+        .linguagens::-webkit-scrollbar-thumb{
+            background-color: var(--tittleColor);
+            
+            border-radius: 100px;
+        }
     }
 }

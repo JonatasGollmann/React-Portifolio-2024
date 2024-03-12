@@ -115,6 +115,7 @@
     padding: 15px;
     background-color: var(--tittleColor);
     border-radius: 5px;
+    color: var(--backgroundContainerColor);
   }
   .ecofresh{
     min-height: 350px;

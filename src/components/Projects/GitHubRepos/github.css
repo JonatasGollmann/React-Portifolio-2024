@@ -180,6 +180,11 @@
   .repositorios{
     min-width: 100%;
     overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .repositorios::-webkit-scrollbar{
+    width: 0;
+    height: 0;
   }
   .repositorios > *{
     min-width: 90%;
@@ -190,12 +195,6 @@
     right: 0;
     left: 0;
     bottom: 50%;
-  }
-  .perfil .githubProfile i {
-    transition: all 0.5s;
-    opacity: 1;
-    color: var(--backgroundColor);
-    font-size: 2rem;
   }
   .reposItems .projectOpen i {
     font-size: 50px;
@@ -209,8 +208,6 @@
     text-align: justify;
     font-size: 0.8rem;
     color: var(--mainColor);
-
-    transition: all 0.5s;
   }
   .reposItems .projectLinguagens {
     display: flex;
@@ -222,10 +219,11 @@
     transition: all 0.5s;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1250px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .repositorios{
     min-width: 100%;
     overflow-x: scroll;
+    overflow-y: hidden;
   }
   .repositorios::-webkit-scrollbar{
     width: 0;
@@ -240,12 +238,6 @@
     right: 0;
     left: 0;
     bottom: 50%;
-  }
-  .perfil .githubProfile i {
-    transition: all 0.5s;
-    opacity: 1;
-    color: var(--backgroundColor);
-    font-size: 2rem;
   }
   .reposItems .projectOpen i {
     font-size: 50px;
@@ -270,5 +262,20 @@
     font-size: 0.8rem;
     color: var(--mainColor);
     transition: all 0.5s;
+  }
+  @media (hover : hover){
+      .repositorios{
+          overflow-x: scroll;
+      }
+      .repositorios::-webkit-scrollbar{
+          background: transparent;
+          height: 5px;
+          border-radius: 100px;
+      }
+      .repositorios::-webkit-scrollbar-thumb{
+          background-color: var(--tittleColor);
+          
+          border-radius: 100px;
+      }
   }
 }
