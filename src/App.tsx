@@ -1,33 +1,23 @@
-import "normalize.css";
-import "./App.css";
-import Home from "./components/Homepage/home";
-import BackgroundAnimate from './components/Background/background'
-import About from './components/About/about'
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer/footer";
+import About from "./common/aboutSection";
+import Contact from "./common/contactSection";
+import Landing from "./common/landingSection";
+import Footer from "./components/footer/footer";
+import Header from "./components/header/header";
 
 function App() {
-  const scrollTo = (elemento: any) =>{
-    const element = document.getElementById(elemento);
-    if(element){
-      element.scrollIntoView(
-        { behavior: "smooth"}
-      );
-    }
-  }
-
   return (
-    <div className="app">
-      
-      <div className="main">
-        <Home scrollTo={scrollTo} />
-        <About />
-        <Projects />
+    <>
+      <div className="flex flex-col font-Gantari ">
+        <Header />
+        <main className="bg-gradient-to-tr to-white-3 from-white-2">
+          <Landing />
+          <About />
+          <Contact />
+        </main>
         <Footer />
       </div>
-      <BackgroundAnimate />
-    </div>
-  )
+    </>
+  );
 }
 
 export default App;
