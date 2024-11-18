@@ -1,4 +1,6 @@
 import MainTittle from "../titles/MainTittle";
+import BlokotoBG from '/src/assets/blokotobt.png'
+import BlokotoLogo from '/src/assets/blokoto_logo.svg'
 
 export default function Projects() {
   return (
@@ -8,7 +10,7 @@ export default function Projects() {
         <div className="relative mx-4 lg:w-[1000px] h-[500px]">
           <div className="size-full absolute bg-gradient-to-bl to-green-1 from-light-green-1 rounded-2xl mix-blend-color"></div>
           <img
-            src="/src/assets/blokoto_logo.svg"
+            src={BlokotoLogo}
             className="absolute min-w-[220px] w-1/4 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
             alt=""
           />
@@ -21,7 +23,7 @@ export default function Projects() {
             Conheça mais sobre o Blokoto
           </a>
           <img
-            src="/src/assets/blokotobt.png"
+            src={BlokotoBG}
             alt=""
             className="w-full h-full object-cover rounded-2xl"
           />
