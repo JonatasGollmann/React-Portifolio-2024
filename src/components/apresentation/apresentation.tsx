@@ -1,5 +1,5 @@
 import { ITextosApresentacao } from "../../utils/interfaces";
-import MainTittle from "../titles/MainTittle";
+import MainTittle from "../Titles/MainTittle";
 
 const textosApresentacao: ITextosApresentacao[] = [
   {

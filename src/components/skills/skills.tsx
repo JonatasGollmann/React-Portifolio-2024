@@ -1,4 +1,4 @@
-import MainTittle from "../titles/MainTittle";
+import MainTittle from "../Titles/MainTittle";
 
 const linguagens = [
   { id: 0, name: "Git", icon: "devicon-git-plain" },

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ReposData, UserData } from "../../utils/githubData";
 import { IRepositorioGitHub, IUsuarioGitHub } from "../../utils/interfaces";
 import { ExternalLink } from "lucide-react";
-import MainTittle from "../titles/MainTittle";
+import MainTittle from "../Titles/MainTittle";
 
 export function GitHub() {
   const [userGithub, setUserGithub] = useState({} as IUsuarioGitHub);

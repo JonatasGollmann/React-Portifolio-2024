@@ -1,6 +1,6 @@
 import PMSCSLogo from "/src/assets/pmscs_logo.png";
 import BKTLogo from "/src/assets/blokoto_logo.svg";
-import MainTittle from "../titles/MainTittle";
+import MainTittle from "../Titles/MainTittle";
 
 export default function Jobs() {
   return (

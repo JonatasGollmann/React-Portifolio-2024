@@ -1,4 +1,4 @@
-import MainTittle from "../titles/MainTittle";
+import MainTittle from "../Titles/MainTittle";
 import BlokotoBG from '/src/assets/blokotobt.png'
 import BlokotoLogo from '/src/assets/blokoto_logo.svg'
 
